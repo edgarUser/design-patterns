@@ -1,2 +1,2 @@
 # design-patterns
-This repository will store the resource from design patterns learning..
+This repository will store the resource from design patterns learning.
