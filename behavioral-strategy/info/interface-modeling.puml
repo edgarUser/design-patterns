@@ -1,0 +1,46 @@
+@startuml
+interface "Flyable" {
+    {method} fly()
+}
+
+interface "Quackable" {
+    {method} quack()
+}
+
+abstract class "Duck" {
+    {method} swim()
+    {method} display()
+}
+
+class "MallardDuck" {
+    {method} display()
+    {method} fly()
+    {method} quack()
+}
+
+class "RedheadDuck" {
+    {method} display()
+    {method} fly()
+    {method} quack()
+}
+
+class "RubberDuck" {
+    {method} display()
+    {method} quack()
+}
+
+class "DecoyDuck" {
+    {method} display()
+}
+
+Duck <-- MallardDuck
+Duck <-- RedheadDuck
+Duck <-- RubberDuck
+Duck <-- DecoyDuck
+Flyable <.. MallardDuck
+Quackable <.. MallardDuck
+Flyable <.. RedheadDuck
+Quackable <.. RedheadDuck
+Quackable <.. RubberDuck
+
+@enduml
