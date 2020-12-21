@@ -7,7 +7,15 @@
             ]
         },{
             "Design Principles": [
-                ""
+                "Inheritance",
+                "Polymorphism",
+                "Encapsulation",
+                "Encapsulate what varies",
+                "Program to an interface, not an implementation",
+                "Use composition more than inheritence",
+                "Loose coupling",
+                "Open-closed",
+                "Single responsibility"
             ]
         }
         
