@@ -1,0 +1,42 @@
+@startuml
+
+interface "ShareBehavior" {
+    {method} share()
+}
+
+class "ShareText"{
+    {method} share()   
+}
+
+class "ShareEmail"{
+    {method} share()   
+}
+
+class "ShareSocialMedia"{
+    {method} share()   
+}
+
+abstract class  "PhoneCameraApp" {
+    {field} ShareBehavior shareBehavior
+    {method} setShareBehavior()
+    {method} performShare()
+    {method} edit()
+    {method} save()
+    {method} share()
+}
+
+class "BasicCameraApp" {
+    {method} edit()
+}
+
+class "CameraPlusApp" {
+    {method} edit()
+}
+
+ShareBehavior <.. ShareText
+ShareBehavior <.. ShareEmail
+ShareBehavior <.. ShareSocialMedia
+ShareBehavior --o PhoneCameraApp
+PhoneCameraApp <-- BasicCameraApp
+PhoneCameraApp <-- CameraPlusApp
+@enduml

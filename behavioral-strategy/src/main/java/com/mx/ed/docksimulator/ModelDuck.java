@@ -1,4 +1,4 @@
-package com.mx.ed;
+package com.mx.ed.docksimulator;
 
 public class ModelDuck extends Duck {
 	public ModelDuck() {

@@ -1,4 +1,4 @@
-package com.mx.ed;
+package com.mx.ed.docksimulator;
 
 public class Quack implements QuackBehavior {
 	public void quack() {

@@ -1,4 +1,4 @@
-package com.mx.ed;
+package com.mx.ed.docksimulator;
 
 public class FlyWithWings implements FlyBehavior {
 	public void fly() {

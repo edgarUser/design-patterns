@@ -1,4 +1,4 @@
-package com.mx.ed;
+package com.mx.ed.docksimulator;
 
 public abstract class Duck {
 	FlyBehavior flyBehavior;

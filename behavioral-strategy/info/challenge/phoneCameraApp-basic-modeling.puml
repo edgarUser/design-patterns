@@ -1,0 +1,20 @@
+@startuml
+
+abstract class  "PhoneCameraApp" {
+    {method} take()
+    {method} edit()
+    {method} save()
+    {method} share()
+}
+
+class "BasicCameraApp" {
+    {method} edit()
+}
+
+class "CameraPlusApp" {
+    {method} edit()
+}
+
+PhoneCameraApp <-- BasicCameraApp
+PhoneCameraApp <-- CameraPlusApp
+@enduml

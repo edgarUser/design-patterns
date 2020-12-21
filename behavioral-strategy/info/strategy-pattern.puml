@@ -1,0 +1,33 @@
+@startuml
+
+interface "AlgorithmInterface" {
+    {method} doAlgorithm()
+}
+
+class "AlgorithmImpl1"{
+    {method} doAlgorithm()   
+}
+
+class "AlgorithmImpl2"{
+    {method} doAlgorithm()   
+}
+
+abstract class  "Superclass" {
+    {field} AlgorithmInterface behavior
+    {method} setBehaivor()
+    {method} performBehaivor()
+}
+
+class "Subclass1" {
+}
+
+class "Subclass2" {
+}
+
+AlgorithmInterface <.. AlgorithmImpl1
+AlgorithmInterface <.. AlgorithmImpl2
+AlgorithmInterface --o Superclass
+Superclass <-- Subclass1
+Superclass <-- Subclass2
+
+@enduml
